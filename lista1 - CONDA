@@ -1,0 +1,1315 @@
+1. Crie ao menos três ambientes conda
+
+(base) alessandra@hub-G3-3590:~$ conda create -n amb1
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb1
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate amb1
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) alessandra@hub-G3-3590:~$ conda create -n amb2
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb2
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate amb2
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) alessandra@hub-G3-3590:~$ conda create -n amb3
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb3
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this en(base) alessandra@hub-G3-3590:~$ conda env list
+# conda environments:
+#
+base                  *  /home/alessandra/miniconda3
+amb1                     /home/alessandra/miniconda3/envs/amb1
+amb2                     /home/alessandra/miniconda3/envs/amb2
+amb3                     /home/alessandra/miniconda3/envs/amb3
+
+vironment, use
+#
+#     $ conda activate amb3
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+------------------------------------------------------------------------
+
+2. Liste os ambientes criados
+
+(base) alessandra@hub-G3-3590:~$ conda env list
+# conda environments:
+#
+base                  *  /home/alessandra/miniconda3
+amb1                     /home/alessandra/miniconda3/envs/amb1
+amb2                     /home/alessandra/miniconda3/envs/amb2
+amb3                     /home/alessandra/miniconda3/envs/amb3
+
+------------------------------------------------------------------------
+
+3. Instale ao menos dois pacotes em cada ambiente
+
+(base) alessandra@hub-G3-3590:~$ conda activate amb1
+(amb1) alessandra@hub-G3-3590:~$ conda install numpy
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+WARNING conda.core.package_cache_data:_make_single_record(350): Encountered corrupt package tarball at /home/alessandra/miniconda3/pkgs/gcc_impl_linux-64-7.3.0-habb00fd_1.conda. Conda has removed it, but you need to re-run conda to download it again.
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb1
+
+  added / updated specs:
+    - numpy
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  blas               pkgs/main/linux-64::blas-1.0-mkl
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2019.8.28-0
+  certifi            pkgs/main/linux-64::certifi-2019.9.11-py37_0
+  intel-openmp       pkgs/main/linux-64::intel-openmp-2019.4-243
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.2.1-hd88cf55_4
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libgfortran-ng     pkgs/main/linux-64::libgfortran-ng-7.3.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  mkl                pkgs/main/linux-64::mkl-2019.4-243
+  mkl-service        pkgs/main/linux-64::mkl-service-2.3.0-py37he904b0f_0
+  mkl_fft            pkgs/main/linux-64::mkl_fft-1.0.14-py37ha843d7b_0
+  mkl_random         pkgs/main/linux-64::mkl_random-1.1.0-py37hd6b4f25_0
+  ncurses            pkgs/main/linux-64::ncurses-6.1-he6710b0_1
+  numpy              pkgs/main/linux-64::numpy-1.17.2-py37haad9e8e_0
+  numpy-base         pkgs/main/linux-64::numpy-base-1.17.2-py37hde5b4d6_0
+  openssl            pkgs/main/linux-64::openssl-1.1.1d-h7b6447c_2
+  pip                pkgs/main/linux-64::pip-19.2.3-py37_0
+  python             pkgs/main/linux-64::python-3.7.4-h265db76_1
+  readline           pkgs/main/linux-64::readline-7.0-h7b6447c_5
+  setuptools         pkgs/main/linux-64::setuptools-41.2.0-py37_0
+  six                pkgs/main/linux-64::six-1.12.0-py37_0
+  sqlite             pkgs/main/linux-64::sqlite-3.29.0-h7b6447c_0
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  wheel              pkgs/main/linux-64::wheel-0.33.6-py37_0
+  xz                 pkgs/main/linux-64::xz-5.2.4-h14c3975_4
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(amb1) alessandra@hub-G3-3590:~$ conda install django
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb1
+
+  added / updated specs:
+    - django
+
+
+The following NEW packages will be INSTALLED:
+
+  django             pkgs/main/linux-64::django-2.2.5-py37_1
+  pytz               pkgs/main/noarch::pytz-2019.2-py_0
+  sqlparse           pkgs/main/noarch::sqlparse-0.3.0-py_0
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(amb1) alessandra@hub-G3-3590:~$ conda deactivate
+(base) alessandra@hub-G3-3590:~$ conda activate amb2
+(amb2) alessandra@hub-G3-3590:~$ conda install numpy
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb2
+
+  added / updated specs:
+    - numpy
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  blas               pkgs/main/linux-64::blas-1.0-mkl
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2019.8.28-0
+  certifi            pkgs/main/linux-64::certifi-2019.9.11-py37_0
+  intel-openmp       pkgs/main/linux-64::intel-openmp-2019.4-243
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.2.1-hd88cf55_4
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libgfortran-ng     pkgs/main/linux-64::libgfortran-ng-7.3.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  mkl                pkgs/main/linux-64::mkl-2019.4-243
+  mkl-service        pkgs/main/linux-64::mkl-service-2.3.0-py37he904b0f_0
+  mkl_fft            pkgs/main/linux-64::mkl_fft-1.0.14-py37ha843d7b_0
+  mkl_random         pkgs/main/linux-64::mkl_random-1.1.0-py37hd6b4f25_0
+  ncurses            pkgs/main/linux-64::ncurses-6.1-he6710b0_1
+  numpy              pkgs/main/linux-64::numpy-1.17.2-py37haad9e8e_0
+  numpy-base         pkgs/main/linux-64::numpy-base-1.17.2-py37hde5b4d6_0
+  openssl            pkgs/main/linux-64::openssl-1.1.1d-h7b6447c_2
+  pip                pkgs/main/linux-64::pip-19.2.3-py37_0
+  python             pkgs/main/linux-64::python-3.7.4-h265db76_1
+  readline           pkgs/main/linux-64::readline-7.0-h7b6447c_5
+  setuptools         pkgs/main/linux-64::setuptools-41.2.0-py37_0
+  six                pkgs/main/linux-64::six-1.12.0-py37_0
+  sqlite             pkgs/main/linux-64::sqlite-3.29.0-h7b6447c_0
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  wheel              pkgs/main/linux-64::wheel-0.33.6-py37_0
+  xz                 pkgs/main/linux-64::xz-5.2.4-h14c3975_4
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(amb2) alessandra@hub-G3-3590:~$ conda install theano
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb2
+
+  added / updated specs:
+    - theano
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    gcc_impl_linux-64-7.3.0    |       habb00fd_1        41.9 MB
+    ------------------------------------------------------------
+                                           Total:        41.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  binutils_impl_lin~ pkgs/main/linux-64::binutils_impl_linux-64-2.31.1-h6176602_1
+  binutils_linux-64  pkgs/main/linux-64::binutils_linux-64-2.31.1-h6176602_8
+  gcc_impl_linux-64  pkgs/main/linux-64::gcc_impl_linux-64-7.3.0-habb00fd_1
+  gcc_linux-64       pkgs/main/linux-64::gcc_linux-64-7.3.0-h553295d_8
+  gxx_impl_linux-64  pkgs/main/linux-64::gxx_impl_linux-64-7.3.0-hdf63c60_1
+  gxx_linux-64       pkgs/main/linux-64::gxx_linux-64-7.3.0-h553295d_8
+  libgpuarray        pkgs/main/linux-64::libgpuarray-0.7.6-h14c3975_0
+  mako               pkgs/main/noarch::mako-1.1.0-py_0
+  markupsafe         pkgs/main/linux-64::markupsafe-1.1.1-py37h7b6447c_0
+  pygpu              pkgs/main/linux-64::pygpu-0.7.6-py37h035aef0_0
+  scipy              pkgs/main/linux-64::scipy-1.3.1-py37h7c811a0_0
+  theano             pkgs/main/linux-64::theano-1.0.4-py37hfd86e86_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+gcc_impl_linux-64-7. | 41.9 MB   | ###################################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(amb2) alessandra@hub-G3-3590:~$ conda deactivate
+(base) alessandra@hub-G3-3590:~$ conda activate amb3
+(amb3) alessandra@hub-G3-3590:~$ conda install numpy
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb3
+
+  added / updated specs:
+    - numpy
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  blas               pkgs/main/linux-64::blas-1.0-mkl
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2019.8.28-0
+  certifi            pkgs/main/linux-64::certifi-2019.9.11-py37_0
+  intel-openmp       pkgs/main/linux-64::intel-openmp-2019.4-243
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.2.1-hd88cf55_4
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libgfortran-ng     pkgs/main/linux-64::libgfortran-ng-7.3.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  mkl                pkgs/main/linux-64::mkl-2019.4-243
+  mkl-service        pkgs/main/linux-64::mkl-service-2.3.0-py37he904b0f_0
+  mkl_fft            pkgs/main/linux-64::mkl_fft-1.0.14-py37ha843d7b_0
+  mkl_random         pkgs/main/linux-64::mkl_random-1.1.0-py37hd6b4f25_0
+  ncurses            pkgs/main/linux-64::ncurses-6.1-he6710b0_1
+  numpy              pkgs/main/linux-64::numpy-1.17.2-py37haad9e8e_0
+  numpy-base         pkgs/main/linux-64::numpy-base-1.17.2-py37hde5b4d6_0
+  openssl            pkgs/main/linux-64::openssl-1.1.1d-h7b6447c_2
+  pip                pkgs/main/linux-64::pip-19.2.3-py37_0
+  python             pkgs/main/linux-64::python-3.7.4-h265db76_1
+  readline           pkgs/main/linux-64::readline-7.0-h7b6447c_5
+  setuptools         pkgs/main/linux-64::setuptools-41.2.0-py37_0
+  six                pkgs/main/linux-64::six-1.12.0-py37_0
+  sqlite             pkgs/main/linux-64::sqlite-3.29.0-h7b6447c_0
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  wheel              pkgs/main/linux-64::wheel-0.33.6-py37_0
+  xz                 pkgs/main/linux-64::xz-5.2.4-h14c3975_4
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(amb3) alessandra@hub-G3-3590:~$ conda install -c conda-forge scikit-fuzzy
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb3
+
+  added / updated specs:
+    - scikit-fuzzy
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2019.9.11          |           py37_0         147 KB  conda-forge
+    cycler-0.10.0              |             py_1           8 KB  conda-forge
+    dbus-1.13.6                |       he372182_0         602 KB  conda-forge
+    decorator-4.4.0            |             py_0          11 KB  conda-forge
+    expat-2.2.5                |    he1b5a44_1003         191 KB  conda-forge
+    fontconfig-2.13.1          |    he4413a7_1000         327 KB  conda-forge
+    freetype-2.10.0            |       he983fc9_1         884 KB  conda-forge
+    gettext-0.19.8.1           |    hc5be6a0_1002         3.6 MB  conda-forge
+    glib-2.58.3                |    h6f030ca_1002         3.3 MB  conda-forge
+    gst-plugins-base-1.14.5    |       h0935bb2_0         6.8 MB  conda-forge
+    gstreamer-1.14.5           |       h36ae1b5_0         4.5 MB  conda-forge
+    icu-58.2                   |    hf484d3e_1000        22.6 MB  conda-forge
+    jpeg-9c                    |    h14c3975_1001         251 KB  conda-forge
+    kiwisolver-1.1.0           |   py37hc9558a2_0          86 KB  conda-forge
+    libiconv-1.15              |    h516909a_1005         2.0 MB  conda-forge
+    libpng-1.6.37              |       hed695b0_0         343 KB  conda-forge
+    libuuid-2.32.1             |    h14c3975_1000          26 KB  conda-forge
+    libxcb-1.13                |    h14c3975_1002         396 KB  conda-forge
+    libxml2-2.9.9              |       h13577e0_2         1.3 MB  conda-forge
+    matplotlib-3.1.1           |   py37h5429711_0         5.0 MB
+    networkx-2.3               |             py_0         1.1 MB  conda-forge
+    pcre-8.41                  |    hf484d3e_1003         249 KB  conda-forge
+    pthread-stubs-0.4          |    h14c3975_1001           5 KB  conda-forge
+    pyparsing-2.4.2            |             py_0          57 KB  conda-forge
+    pyqt-5.9.2                 |   py37hcca6a23_4         5.7 MB  conda-forge
+    python-dateutil-2.8.0      |             py_0         219 KB  conda-forge
+    pytz-2019.2                |             py_0         228 KB  conda-forge
+    qt-5.9.7                   |       h52cfd70_2        85.9 MB  conda-forge
+    scikit-fuzzy-0.4.1         |             py_0         714 KB  conda-forge
+    sip-4.19.8                 |py37hf484d3e_1000         290 KB  conda-forge
+    tornado-6.0.3              |   py37h516909a_0         637 KB  conda-forge
+    xorg-libxau-1.0.9          |       h14c3975_0          13 KB  conda-forge
+    xorg-libxdmcp-1.1.3        |       h516909a_0          18 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       147.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  cycler             conda-forge/noarch::cycler-0.10.0-py_1
+  dbus               conda-forge/linux-64::dbus-1.13.6-he372182_0
+  decorator          conda-forge/noarch::decorator-4.4.0-py_0
+  expat              conda-forge/linux-64::expat-2.2.5-he1b5a44_1003
+  fontconfig         conda-forge/linux-64::fontconfig-2.13.1-he4413a7_1000
+  freetype           conda-forge/linux-64::freetype-2.10.0-he983fc9_1
+  gettext            conda-forge/linux-64::gettext-0.19.8.1-hc5be6a0_1002
+  glib               conda-forge/linux-64::glib-2.58.3-h6f030ca_1002
+  gst-plugins-base   conda-forge/linux-64::gst-plugins-base-1.14.5-h0935bb2_0
+  gstreamer          conda-forge/linux-64::gstreamer-1.14.5-h36ae1b5_0
+  icu                conda-forge/linux-64::icu-58.2-hf484d3e_1000
+  jpeg               conda-forge/linux-64::jpeg-9c-h14c3975_1001
+  kiwisolver         conda-forge/linux-64::kiwisolver-1.1.0-py37hc9558a2_0
+  libiconv           conda-forge/linux-64::libiconv-1.15-h516909a_1005
+  libpng             conda-forge/linux-64::libpng-1.6.37-hed695b0_0
+  libuuid            conda-forge/linux-64::libuuid-2.32.1-h14c3975_1000
+  libxcb             conda-forge/linux-64::libxcb-1.13-h14c3975_1002
+  libxml2            conda-forge/linux-64::libxml2-2.9.9-h13577e0_2
+  matplotlib         pkgs/main/linux-64::matplotlib-3.1.1-py37h5429711_0
+  networkx           conda-forge/noarch::networkx-2.3-py_0
+  pcre               conda-forge/linux-64::pcre-8.41-hf484d3e_1003
+  pthread-stubs      conda-forge/linux-64::pthread-stubs-0.4-h14c3975_1001
+  pyparsing          conda-forge/noarch::pyparsing-2.4.2-py_0
+  pyqt               conda-forge/linux-64::pyqt-5.9.2-py37hcca6a23_4
+  python-dateutil    conda-forge/noarch::python-dateutil-2.8.0-py_0
+  pytz               conda-forge/noarch::pytz-2019.2-py_0
+  qt                 conda-forge/linux-64::qt-5.9.7-h52cfd70_2
+  scikit-fuzzy       conda-forge/noarch::scikit-fuzzy-0.4.1-py_0
+  scipy              pkgs/main/linux-64::scipy-1.3.1-py37h7c811a0_0
+  sip                conda-forge/linux-64::sip-4.19.8-py37hf484d3e_1000
+  tornado            conda-forge/linux-64::tornado-6.0.3-py37h516909a_0
+  xorg-libxau        conda-forge/linux-64::xorg-libxau-1.0.9-h14c3975_0
+  xorg-libxdmcp      conda-forge/linux-64::xorg-libxdmcp-1.1.3-h516909a_0
+
+The following packages will be UPDATED:
+
+  ca-certificates    pkgs/main::ca-certificates-2019.8.28-0 --> conda-forge::ca-certificates-2019.9.11-hecc5488_0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  certifi                                         pkgs/main --> conda-forge
+  openssl              pkgs/main::openssl-1.1.1d-h7b6447c_2 --> conda-forge::openssl-1.1.1c-h516909a_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+decorator-4.4.0      | 11 KB     | ###################################################### | 100% 
+tornado-6.0.3        | 637 KB    | ###################################################### | 100% 
+libiconv-1.15        | 2.0 MB    | ###################################################### | 100% 
+sip-4.19.8           | 290 KB    | ###################################################### | 100% 
+qt-5.9.7             | 85.9 MB   | ###################################################### | 100% 
+pthread-stubs-0.4    | 5 KB      | ###################################################### | 100% 
+gst-plugins-base-1.1 | 6.8 MB    | ###################################################### | 100% 
+fontconfig-2.13.1    | 327 KB    | ###################################################### | 100% 
+glib-2.58.3          | 3.3 MB    | ###################################################### | 100% 
+libxcb-1.13          | 396 KB    | ###################################################### | 100% 
+certifi-2019.9.11    | 147 KB    | ###################################################### | 100% 
+scikit-fuzzy-0.4.1   | 714 KB    | ###################################################### | 100% 
+gstreamer-1.14.5     | 4.5 MB    | ###################################################### | 100% 
+expat-2.2.5          | 191 KB    | ###################################################### | 100% 
+pcre-8.41            | 249 KB    | ###################################################### | 100% 
+networkx-2.3         | 1.1 MB    | ###################################################### | 100% 
+icu-58.2             | 22.6 MB   | ###################################################### | 100% 
+libuuid-2.32.1       | 26 KB     | ###################################################### | 100% 
+cycler-0.10.0        | 8 KB      | ###################################################### | 100% 
+dbus-1.13.6          | 602 KB    | ###################################################### | 100% 
+pyparsing-2.4.2      | 57 KB     | ###################################################### | 100% 
+pytz-2019.2          | 228 KB    | ###################################################### | 100% 
+matplotlib-3.1.1     | 5.0 MB    | ###################################################### | 100% 
+pyqt-5.9.2           | 5.7 MB    | ###################################################### | 100% 
+libxml2-2.9.9        | 1.3 MB    | ###################################################### | 100% 
+kiwisolver-1.1.0     | 86 KB     | ###################################################### | 100% 
+libpng-1.6.37        | 343 KB    | ###################################################### | 100% 
+gettext-0.19.8.1     | 3.6 MB    | ###################################################### | 100% 
+freetype-2.10.0      | 884 KB    | ###################################################### | 100% 
+python-dateutil-2.8. | 219 KB    | ###################################################### | 100% 
+jpeg-9c              | 251 KB    | ###################################################### | 100% 
+xorg-libxdmcp-1.1.3  | 18 KB     | ###################################################### | 100% 
+xorg-libxau-1.0.9    | 13 KB     | ###################################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+------------------------------------------------------------------------
+
+4. Liste os pacotes de cada ambiente
+
+(base) alessandra@hub-G3-3590:~$ conda activate amb1
+(amb1) alessandra@hub-G3-3590:~$ conda list
+# packages in environment at /home/alessandra/miniconda3/envs/amb1:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+blas                      1.0                         mkl  
+ca-certificates           2019.8.28                     0  
+certifi                   2019.9.11                py37_0  
+django                    2.2.5                    py37_1  
+intel-openmp              2019.4                      243  
+libedit                   3.1.20181209         hc058e9b_0  
+libffi                    3.2.1                hd88cf55_4  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libgfortran-ng            7.3.0                hdf63c60_0  
+libstdcxx-ng              9.1.0                hdf63c60_0  
+mkl                       2019.4                      243  
+mkl-service               2.3.0            py37he904b0f_0  
+mkl_fft                   1.0.14           py37ha843d7b_0  
+mkl_random                1.1.0            py37hd6b4f25_0  
+ncurses                   6.1                  he6710b0_1  
+numpy                     1.17.2           py37haad9e8e_0  
+numpy-base                1.17.2           py37hde5b4d6_0  
+openssl                   1.1.1d               h7b6447c_2  
+pip                       19.2.3                   py37_0  
+python                    3.7.4                h265db76_1  
+pytz                      2019.2                     py_0  
+readline                  7.0                  h7b6447c_5  
+setuptools                41.2.0                   py37_0  
+six                       1.12.0                   py37_0  
+sqlite                    3.29.0               h7b6447c_0  
+sqlparse                  0.3.0                      py_0  
+tk                        8.6.8                hbc83047_0  
+wheel                     0.33.6                   py37_0  
+xz                        5.2.4                h14c3975_4  
+zlib                      1.2.11               h7b6447c_3  
+(amb1) alessandra@hub-G3-3590:~$ conda deactivate 
+(base) alessandra@hub-G3-3590:~$ conda activate amb2
+(amb2) alessandra@hub-G3-3590:~$ conda list
+# packages in environment at /home/alessandra/miniconda3/envs/amb2:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+binutils_impl_linux-64    2.31.1               h6176602_1  
+binutils_linux-64         2.31.1               h6176602_8  
+blas                      1.0                         mkl  
+ca-certificates           2019.8.28                     0  
+certifi                   2019.9.11                py37_0  
+gcc_impl_linux-64         7.3.0                habb00fd_1  
+gcc_linux-64              7.3.0                h553295d_8  
+gxx_impl_linux-64         7.3.0                hdf63c60_1  
+gxx_linux-64              7.3.0                h553295d_8  
+intel-openmp              2019.4                      243  
+libedit                   3.1.20181209         hc058e9b_0  
+libffi                    3.2.1                hd88cf55_4  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libgfortran-ng            7.3.0                hdf63c60_0  
+libgpuarray               0.7.6                h14c3975_0  
+libstdcxx-ng              9.1.0                hdf63c60_0  
+mako                      1.1.0                      py_0  
+markupsafe                1.1.1            py37h7b6447c_0  
+mkl                       2019.4                      243  
+mkl-service               2.3.0            py37he904b0f_0  
+mkl_fft                   1.0.14           py37ha843d7b_0  
+mkl_random                1.1.0            py37hd6b4f25_0  
+ncurses                   6.1                  he6710b0_1  
+numpy                     1.17.2           py37haad9e8e_0  
+numpy-base                1.17.2           py37hde5b4d6_0  
+openssl                   1.1.1d               h7b6447c_2  
+pip                       19.2.3                   py37_0  
+pygpu                     0.7.6            py37h035aef0_0  
+python                    3.7.4                h265db76_1  
+readline                  7.0                  h7b6447c_5  
+scipy                     1.3.1            py37h7c811a0_0  
+setuptools                41.2.0                   py37_0  
+six                       1.12.0                   py37_0  
+sqlite                    3.29.0               h7b6447c_0  
+theano                    1.0.4            py37hfd86e86_0  
+tk                        8.6.8                hbc83047_0  
+wheel                     0.33.6                   py37_0  
+xz                        5.2.4                h14c3975_4  
+zlib                      1.2.11               h7b6447c_3  
+(amb2) alessandra@hub-G3-3590:~$ conda deactivate 
+(base) alessandra@hub-G3-3590:~$ conda activate amb3
+(amb3) alessandra@hub-G3-3590:~$ conda list
+# packages in environment at /home/alessandra/miniconda3/envs/amb3:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+blas                      1.0                         mkl  
+ca-certificates           2019.9.11            hecc5488_0    conda-forge
+certifi                   2019.9.11                py37_0    conda-forge
+cycler                    0.10.0                     py_1    conda-forge
+dbus                      1.13.6               he372182_0    conda-forge
+decorator                 4.4.0                      py_0    conda-forge
+expat                     2.2.5             he1b5a44_1003    conda-forge
+fontconfig                2.13.1            he4413a7_1000    conda-forge
+freetype                  2.10.0               he983fc9_1    conda-forge
+gettext                   0.19.8.1          hc5be6a0_1002    conda-forge
+glib                      2.58.3            h6f030ca_1002    conda-forge
+gst-plugins-base          1.14.5               h0935bb2_0    conda-forge
+gstreamer                 1.14.5               h36ae1b5_0    conda-forge
+icu                       58.2              hf484d3e_1000    conda-forge
+intel-openmp              2019.4                      243  
+jpeg                      9c                h14c3975_1001    conda-forge
+kiwisolver                1.1.0            py37hc9558a2_0    conda-forge
+libedit                   3.1.20181209         hc058e9b_0  
+libffi                    3.2.1                hd88cf55_4  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libgfortran-ng            7.3.0                hdf63c60_0  
+libiconv                  1.15              h516909a_1005    conda-forge
+libpng                    1.6.37               hed695b0_0    conda-forge
+libstdcxx-ng              9.1.0                hdf63c60_0  
+libuuid                   2.32.1            h14c3975_1000    conda-forge
+libxcb                    1.13              h14c3975_1002    conda-forge
+libxml2                   2.9.9                h13577e0_2    conda-forge
+matplotlib                3.1.1            py37h5429711_0  
+mkl                       2019.4                      243  
+mkl-service               2.3.0            py37he904b0f_0  
+mkl_fft                   1.0.14           py37ha843d7b_0  
+mkl_random                1.1.0            py37hd6b4f25_0  
+ncurses                   6.1                  he6710b0_1  
+networkx                  2.3                        py_0    conda-forge
+numpy                     1.17.2           py37haad9e8e_0  
+numpy-base                1.17.2           py37hde5b4d6_0  
+openssl                   1.1.1c               h516909a_0    conda-forge
+pcre                      8.41              hf484d3e_1003    conda-forge
+pip                       19.2.3                   py37_0  
+pthread-stubs             0.4               h14c3975_1001    conda-forge
+pyparsing                 2.4.2                      py_0    conda-forge
+pyqt                      5.9.2            py37hcca6a23_4    conda-forge
+python                    3.7.4                h265db76_1  
+python-dateutil           2.8.0                      py_0    conda-forge
+pytz                      2019.2                     py_0    conda-forge
+qt                        5.9.7                h52cfd70_2    conda-forge
+readline                  7.0                  h7b6447c_5  
+scikit-fuzzy              0.4.1                      py_0    conda-forge
+scipy                     1.3.1            py37h7c811a0_0  
+setuptools                41.2.0                   py37_0  
+sip                       4.19.8          py37hf484d3e_1000    conda-forge
+six                       1.12.0                   py37_0  
+sqlite                    3.29.0               h7b6447c_0  
+tk                        8.6.8                hbc83047_0  
+tornado                   6.0.3            py37h516909a_0    conda-forge
+wheel                     0.33.6                   py37_0  
+xorg-libxau               1.0.9                h14c3975_0    conda-forge
+xorg-libxdmcp             1.1.3                h516909a_0    conda-forge
+xz                        5.2.4                h14c3975_4  
+zlib                      1.2.11               h7b6447c_3  
+(amb3) alessandra@hub-G3-3590:~$ conda deactivate 
+
+------------------------------------------------------------------------
+
+5. Apague um dos ambientes
+
+(base) alessandra@hub-G3-3590:~$ conda env list
+# conda environments:
+#
+base                  *  /home/alessandra/miniconda3
+amb1                     /home/alessandra/miniconda3/envs/amb1
+amb2                     /home/alessandra/miniconda3/envs/amb2
+amb3                     /home/alessandra/miniconda3/envs/amb3
+
+(base) alessandra@hub-G3-3590:~$ conda-env remove -n amb1
+
+Remove all packages in environment /home/alessandra/miniconda3/envs/amb1:
+
+(base) alessandra@hub-G3-3590:~$ conda env list
+# conda environments:
+#
+base                  *  /home/alessandra/miniconda3
+amb2                     /home/alessandra/miniconda3/envs/amb2
+amb3                     /home/alessandra/miniconda3/envs/amb3
+
+------------------------------------------------------------------------
+
+6. O pacote Rstudio está presente no canal conda-forge? Não
+
+(base) alessandra@hub-G3-3590:~$ conda search rstudio -c conda-forge
+Loading channels: done
+# Name                       Version           Build  Channel             
+rstudio                       1.0.44               0  pkgs/r              
+rstudio                      1.0.136               1  pkgs/r              
+rstudio                      1.0.153               1  pkgs/r              
+rstudio                      1.1.383      h2c9cdda_2  pkgs/r              
+rstudio                      1.1.456      h6bb024c_1  pkgs/r  
+
+------------------------------------------------------------------------
+
+7. Quais as dependências instaladas após instalar o python?
+
+(base) alessandra@hub-G3-3590:~$ conda activate amb1
+(amb1) alessandra@hub-G3-3590:~$ conda install python
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb1
+
+  added / updated specs:
+    - python
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2019.9.11          |           py37_0         154 KB
+    ------------------------------------------------------------
+                                           Total:         154 KB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2019.8.28-0
+  certifi            pkgs/main/linux-64::certifi-2019.9.11-py37_0
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.2.1-hd88cf55_4
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.1-he6710b0_1
+  openssl            pkgs/main/linux-64::openssl-1.1.1d-h7b6447c_2
+  pip                pkgs/main/linux-64::pip-19.2.3-py37_0
+  python             pkgs/main/linux-64::python-3.7.4-h265db76_1
+  readline           pkgs/main/linux-64::readline-7.0-h7b6447c_5
+  setuptools         pkgs/main/linux-64::setuptools-41.2.0-py37_0
+  sqlite             pkgs/main/linux-64::sqlite-3.29.0-h7b6447c_0
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  wheel              pkgs/main/linux-64::wheel-0.33.6-py37_0
+  xz                 pkgs/main/linux-64::xz-5.2.4-h14c3975_4
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+------------------------------------------------------------------------
+
+8. Instale o pacote Pandas pelo pip
+
+(base) alessandra@hub-G3-3590:~$ conda activate amb1
+(amb1) alessandra@hub-G3-3590:~$ pip install pandas
+Collecting pandas
+  Downloading https://files.pythonhosted.org/packages/7e/ab/ea76361f9d3e732e114adcd801d2820d5319c23d0ac5482fa3b412db217e/pandas-0.25.1-cp37-cp37m-manylinux1_x86_64.whl (10.4MB)
+     |████████████████████████████████| 10.4MB 57kB/s 
+Collecting python-dateutil>=2.6.1 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/41/17/c62faccbfbd163c7f57f3844689e3a78bae1f403648a6afb1d0866d87fbb/python_dateutil-2.8.0-py2.py3-none-any.whl (226kB)
+     |████████████████████████████████| 235kB 830kB/s 
+Collecting numpy>=1.13.3 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/ba/e0/46e2f0540370f2661b044647fa447fef2ecbcc8f7cdb4329ca2feb03fb23/numpy-1.17.2-cp37-cp37m-manylinux1_x86_64.whl (20.3MB)
+     |████████████████████████████████| 20.3MB 190kB/s 
+Collecting pytz>=2017.2 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/87/76/46d697698a143e05f77bec5a526bf4e56a0be61d63425b68f4ba553b51f2/pytz-2019.2-py2.py3-none-any.whl (508kB)
+     |████████████████████████████████| 512kB 699kB/s 
+Collecting six>=1.5 (from python-dateutil>=2.6.1->pandas)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Installing collected packages: six, python-dateutil, numpy, pytz, pandas
+Successfully installed numpy-1.17.2 pandas-0.25.1 python-dateutil-2.8.0 pytz-2019.2 six-1.12.0
+
+------------------------------------------------------------------------
+
+9. Monte um ambiente conda novo com python versão 3 Execute o comando python para entrar no interpretador python A partir do interpretador execute o comando print "teste" Após terminar a execução execute ctrl+d para sair do interpretador Qual é o erro apresentado? O que deve ser feito para o print funcionar? Verifique se o mesmo comando apresenta erro no python 2
+
+(base) alessandra@hub-G3-3590:~$ conda create -n amb4
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb4
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate amb4
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) alessandra@hub-G3-3590:~$ conda activate amb4
+(amb4) alessandra@hub-G3-3590:~$ conda search python
+Loading channels: done
+# Name                       Version           Build  Channel             
+python                        2.7.13     hac47a24_15  pkgs/main           
+python                        2.7.13     heccc3f1_16  pkgs/main           
+python                        2.7.13     hfff3488_13  pkgs/main           
+python                        2.7.14     h1571d57_29  pkgs/main           
+python                        2.7.14     h1571d57_30  pkgs/main           
+python                        2.7.14     h1571d57_31  pkgs/main           
+python                        2.7.14     h1aa7481_19  pkgs/main           
+python                        2.7.14     h435b27a_18  pkgs/main           
+python                        2.7.14     h89e7a4a_22  pkgs/main           
+python                        2.7.14     h91f54f5_26  pkgs/main           
+python                        2.7.14     h931c8b0_15  pkgs/main           
+python                        2.7.14     h9b67528_20  pkgs/main           
+python                        2.7.14     ha6fc286_23  pkgs/main           
+python                        2.7.14     hc2b0042_21  pkgs/main           
+python                        2.7.14     hdd48546_24  pkgs/main           
+python                        2.7.14     hf918d8d_16  pkgs/main           
+python                        2.7.15      h1571d57_0  pkgs/main           
+python                        2.7.15      h77bded6_1  pkgs/main           
+python                        2.7.15      h77bded6_2  pkgs/main           
+python                        2.7.15      h9bab390_2  pkgs/main           
+python                        2.7.15      h9bab390_4  pkgs/main           
+python                        2.7.15      h9bab390_6  pkgs/main           
+python                        2.7.16      h8b3fad2_1  pkgs/main           
+python                        2.7.16      h8b3fad2_2  pkgs/main           
+python                        2.7.16      h8b3fad2_3  pkgs/main           
+python                        2.7.16      h8b3fad2_4  pkgs/main           
+python                        2.7.16      h8b3fad2_5  pkgs/main           
+python                        2.7.16      h9bab390_0  pkgs/main           
+python                        2.7.16      h9bab390_6  pkgs/main           
+python                        2.7.16      h9bab390_7  pkgs/main           
+python                         3.5.4     h00c01ad_19  pkgs/main           
+python                         3.5.4     h0b4c808_22  pkgs/main           
+python                         3.5.4     h2170f06_12  pkgs/main           
+python                         3.5.4     h3075507_18  pkgs/main           
+python                         3.5.4     h417fded_24  pkgs/main           
+python                         3.5.4     h56e0582_23  pkgs/main           
+python                         3.5.4     h72f0b78_15  pkgs/main           
+python                         3.5.4     hb43c6bb_21  pkgs/main           
+python                         3.5.4     hc053d89_14  pkgs/main           
+python                         3.5.4     hc3d631a_27  pkgs/main           
+python                         3.5.4     he2c66cf_20  pkgs/main           
+python                         3.5.5      hc3d631a_0  pkgs/main           
+python                         3.5.5      hc3d631a_1  pkgs/main           
+python                         3.5.5      hc3d631a_3  pkgs/main           
+python                         3.5.5      hc3d631a_4  pkgs/main           
+python                         3.5.6      hc3d631a_0  pkgs/main           
+python                         3.6.2     h02fb82a_12  pkgs/main           
+python                         3.6.2     h0b30769_14  pkgs/main           
+python                         3.6.2     h33255ae_18  pkgs/main           
+python                         3.6.2     hca45abc_19  pkgs/main           
+python                         3.6.2     hdfe5801_15  pkgs/main           
+python                         3.6.3      h0ef2715_3  pkgs/main           
+python                         3.6.3      h1284df2_4  pkgs/main           
+python                         3.6.3      h6c0c0dc_5  pkgs/main           
+python                         3.6.3      hc9025b9_1  pkgs/main           
+python                         3.6.3      hcad60d5_0  pkgs/main           
+python                         3.6.3      hefd0734_2  pkgs/main           
+python                         3.6.4      hc3d631a_0  pkgs/main           
+python                         3.6.4      hc3d631a_1  pkgs/main           
+python                         3.6.4      hc3d631a_3  pkgs/main           
+python                         3.6.5      hc3d631a_0  pkgs/main           
+python                         3.6.5      hc3d631a_1  pkgs/main           
+python                         3.6.5      hc3d631a_2  pkgs/main           
+python                         3.6.6      h6e4f718_2  pkgs/main           
+python                         3.6.6      hc3d631a_0  pkgs/main           
+python                         3.6.7      h0371630_0  pkgs/main           
+python                         3.6.8      h0371630_0  pkgs/main           
+python                         3.6.9      h265db76_0  pkgs/main           
+python                         3.7.0      h6e4f718_3  pkgs/main           
+python                         3.7.0      hc3d631a_0  pkgs/main           
+python                         3.7.1      h0371630_3  pkgs/main           
+python                         3.7.1      h0371630_7  pkgs/main           
+python                         3.7.2      h0371630_0  pkgs/main           
+python                         3.7.3      h0371630_0  pkgs/main           
+python                         3.7.4      h265db76_0  pkgs/main           
+python                         3.7.4      h265db76_1  pkgs/main           
+(amb4) alessandra@hub-G3-3590:~$ conda install python=3.7.4
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb4
+
+  added / updated specs:
+    - python=3.7.4
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2019.8.28-0
+  certifi            pkgs/main/linux-64::certifi-2019.9.11-py37_0
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.2.1-hd88cf55_4
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.1-he6710b0_1
+  openssl            pkgs/main/linux-64::openssl-1.1.1d-h7b6447c_2
+  pip                pkgs/main/linux-64::pip-19.2.3-py37_0
+  python             pkgs/main/linux-64::python-3.7.4-h265db76_1
+  readline           pkgs/main/linux-64::readline-7.0-h7b6447c_5
+  setuptools         pkgs/main/linux-64::setuptools-41.2.0-py37_0
+  sqlite             pkgs/main/linux-64::sqlite-3.29.0-h7b6447c_0
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  wheel              pkgs/main/linux-64::wheel-0.33.6-py37_0
+  xz                 pkgs/main/linux-64::xz-5.2.4-h14c3975_4(base) alessandra@hub-G3-3590:~$ conda create -n amb4
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb4
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate amb4
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) alessandra@hub-G3-3590:~$ conda activate amb4
+(amb4) alessandra@hub-G3-3590:~$ conda search python
+Loading channels: done
+# Name                       Version           Build  Channel             
+python                        2.7.13     hac47a24_15  pkgs/main           
+python                        2.7.13     heccc3f1_16  pkgs/main           
+python                        2.7.13     hfff3488_13  pkgs/main           
+python                        2.7.14     h1571d57_29  pkgs/main           
+python                        2.7.14     h1571d57_30  pkgs/main           
+python                        2.7.14     h1571d57_31  pkgs/main           
+python                        2.7.14     h1aa7481_19  pkgs/main           
+python                        2.7.14     h435b27a_18  pkgs/main           
+python                        2.7.14     h89e7a4a_22  pkgs/main           
+python                        2.7.14     h91f54f5_26  pkgs/main           
+python                        2.7.14     h931c8b0_15  pkgs/main           
+python                        2.7.14     h9b67528_20  pkgs/main           
+python                        2.7.14     ha6fc286_23  pkgs/main           
+python                        2.7.14     hc2b0042_21  pkgs/main           
+python                        2.7.14     hdd48546_24  pkgs/main           
+python                        2.7.14     hf918d8d_16  pkgs/main           
+python                        2.7.15      h1571d57_0  pkgs/main           
+python                        2.7.15      h77bded6_1  pkgs/main           
+python                        2.7.15      h77bded6_2  pkgs/main           
+python                        2.7.15      h9bab390_2  pkgs/main           
+python                        2.7.15      h9bab390_4  pkgs/main           
+python                        2.7.15      h9bab390_6  pkgs/main           
+python                        2.7.16      h8b3fad2_1  pkgs/main           
+python                        2.7.16      h8b3fad2_2  pkgs/main           
+python                        2.7.16      h8b3fad2_3  pkgs/main           
+python                        2.7.16      h8b3fad2_4  pkgs/main           
+python                        2.7.16      h8b3fad2_5  pkgs/main           
+python                        2.7.16      h9bab390_0  pkgs/main           
+python                        2.7.16      h9bab390_6  pkgs/main           
+python      ------------------------------------------------------------------------                  2.7.16      h9bab390_7  pkgs/main           
+python                         3.5.4     h00c01ad_19  pkgs/main           
+python                         3.5.4     h0b4c808_22  pkgs/main           
+python                         3.5.4     h2170f06_12  pkgs/main           
+python                         3.5.4     h3075507_18  pkgs/main           
+python                         3.5.4     h417fded_24  pkgs/main           
+python                         3.5.4     h56e0582_23  pkgs/main           
+python                         3.5.4     h72f0b78_15  pkgs/main           
+python                         3.5.4     hb43c6bb_21  pkgs/main           
+python                         3.5.4     hc053d89_14  pkgs/main           
+python                         3.5.4     hc3d631a_27  pkgs/main           
+python                         3.5.4     he2c66cf_20  pkgs/main           
+python                         3.5.5      hc3d631a_0  pkgs/main           
+python                         3.5.5      hc3d631a_1  pkgs/main           
+python                         3.5.5      hc3d631a_3  pkgs/main           
+python                         3.5.5      hc3d631a_4  pkgs/main           
+python                         3.5.6      hc3d631a_0  pkgs/main           
+python                         3.6.2     h02fb82a_12  pkgs/main           
+python                         3.6.2     h0b30769_14  pkgs/main           
+python                         3.6.2     h33255ae_18  pkgs/main           
+python                         3.6.2     hca45abc_19  pkgs/main           
+python                         3.6.2     hdfe5801_15  pkgs/main           
+python                         3.6.3      h0ef2715_3  pkgs/main           
+python                         3.6.3      h1284df2_4  pkgs/main           
+python                         3.6.3      h6c0c0dc_5  pkgs/main           
+python                         3.6.3      hc9025b9_1  pkgs/main           
+python                         3.6.3      hcad60d5_0  pkgs/main           
+python                         3.6.3      hefd0734_2  pkgs/main           
+python                         3.6.4      hc3d631a_0  pkgs/main           
+python                         3.6.4      hc3d631a_1  pkgs/main           
+python                         3.6.4      hc3d631a_3  pkgs/main           
+python                         3.6.5      hc3d631a_0  pkgs/main           
+python                         3.6.5      hc3d631a_1  pkgs/main           
+python                         3.6.5      hc3d631a_2  pkgs/main           
+python                         3.6.6      h6e4f718_2  pkgs/main           
+python                         3.6.6      hc3d631a_0  pkgs/main           
+python                         3.6.7      h0371630_0  pkgs/main           
+python                         3.6.8      h0371630_0  pkgs/main           
+python                         3.6.9      h265db76_0  pkgs/main           
+python                         3.7.0      h6e4f718_3  pkgs/main           
+python                         3.7.0      hc3d631a_0  pkgs/main           
+python                         3.7.1      h0371630_3  pkgs/main           
+python                         3.7.1      h0371630_7  pkgs/main           
+python                         3.7.2      h0371630_0  pkgs/main           
+python                         3.7.3      h0371630_0  pkgs/main           
+python                         3.7.4      h265db76_0  pkgs/main           
+python                         3.7.4      h265db76_1  pkgs/main           
+(amb4) alessandra@hub-G3-3590:~$ conda install python=3.7.4
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb4
+
+  added / updated specs:
+    - python=3.7.4
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2019.8.28-0
+  certifi            pkgs/main/linux-64::certifi-2019.9.11-py37_0
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.2.1-hd88cf55_4
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.1-he6710b0_1
+  openssl            pkgs/main/linux-64::openssl-1.1.1d-h7b6447c_2
+  pip                pkgs/main/linux-64::pip-19.2.3-py37_0
+  python             pkgs/main/linux-64::python-3.7.4-h265db76_1
+  readline           pkgs/main/linux-64::readline-7.0-h7b6447c_5
+  setuptools         pkgs/main/linux-64::setuptools-41.2.0-py37_0
+  sqlite             pkgs/main/linux-64::sqlite-3.29.0-h7b6447c_0
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  wheel              pkgs/main/linux-64::wheel-0.33.6-py37_0
+  xz                 pkgs/main/linux-64::xz-5.2.4-h14c3975_4
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(amb4) alessandra@hub-G3-3590:~$ python
+Python 3.7.4 (default, Aug 13 2019, 20:35:49) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "teste"
+  File "<stdin>", line 1
+    print "teste"
+                ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("teste")?
+
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(amb4) alessandra@hub-G3-3590:~$ python
+Python 3.7.4 (default, Aug 13 2019, 20:35:49) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "teste"
+  File "<stdin>", line 1
+    print "teste"
+                ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("teste")?
+
+%%%%%%%%%%
+
+(amb4) alessandra@hub-G3-3590:~$ conda install python=2.7.16
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/alessandra/miniconda3/envs/amb4
+
+  added / updated specs:
+    - python=2.7.16
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2019.9.11          |           py27_0         154 KB
+    pip-19.2.3                 |           py27_0         1.9 MB
+    python-2.7.16              |       h9bab390_7         9.7 MB
+    setuptools-41.2.0          |           py27_0         662 KB
+    wheel-0.33.6               |           py27_0          40 KB
+    ------------------------------------------------------------
+                                           Total:        12.5 MB
+
+The following NEW packages will be INSTALLED:
+
+  certifi            pkgs/main/linux-64::certifi-2019.9.11-py27_0
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.2.1-hd88cf55_4
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.1-he6710b0_1
+  pip                pkgs/main/linux-64::pip-19.2.3-py27_0
+  python             pkgs/main/linux-64::python-2.7.16-h9bab390_7
+  readline           pkgs/main/linux-64::readline-7.0-h7b6447c_5
+  setuptools         pkgs/main/linux-64::setuptools-41.2.0-py27_0
+  sqlite             pkgs/main/linux-64::sqlite-3.29.0-h7b6447c_0
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  wheel              pkgs/main/linux-64::wheel-0.33.6-py27_0
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+setuptools-41.2.0    | 662 KB    | ###################################################### | 100% 
+python-2.7.16        | 9.7 MB    | ###################################################### | 100% 
+pip-19.2.3           | 1.9 MB    | ###################################################### | 100% 
+wheel-0.33.6         | 40 KB     | ###################################################### | 100% 
+certifi-2019.9.11    | 154 KB    | ###################################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(amb4) alessandra@hub-G3-3590:~$ python
+Python 2.7.16 |Anaconda, Inc.| (default, Sep 24 2019, 21:51:30) 
+[GCC 7.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "teste"
+teste
+>>> 
+(amb4) alessandra@hub-G3-3590:~$ 
+
+------------------------------------------------------------------------
+
+10. Exporte um dos ambientes criados e passe por email para todos os alunos
+
+(base) alessandra@hub-G3-3590:~$ conda-env export -n amb4 -f amb4.yml
+
+------------------------------------------------------------------------
+
+11. Escolha um dos ambientes enviados e monte no seu computador
+
+(base) alessandra@hub-G3-3590:~$ conda-env create -f danielFiep3.yml
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.10
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+Downloading and Extracting Packages
+mkl_fft-1.0.12       | 146 KB    | ##################################### | 100% 
+six-1.12.0           | 23 KB     | ##################################### | 100% 
+libntlm-1.5          | 32 KB     | ##################################### | 100% 
+numpy-1.16.4         | 48 KB     | ##################################### | 100% 
+cyrus-sasl-2.1.26    | 253 KB    | ##################################### | 100% 
+numpy-base-1.16.4    | 3.5 MB    | ##################################### | 100% 
+krb5-1.16.1          | 1.2 MB    | ##################################### | 100% 
+libdb-6.1.26         | 17.7 MB   | ##################################### | 100% 
+mysql-5.7.24         | 19.6 MB   | ##################################### | 100% 
+pandas-0.24.2        | 8.4 MB    | ##################################### | 100% 
+mkl_random-1.0.2     | 333 KB    | ##################################### | 100% 
+python-dateutil-2.8. | 266 KB    | ##################################### | 100% 
+pytz-2019.2          | 245 KB    | ###############################
+
+Please update conda by running
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+    $ conda update -n base -c defaults conda###### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate ambienteFiep3
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
